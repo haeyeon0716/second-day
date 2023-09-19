@@ -1,0 +1,71 @@
+@import 'reset';
+@import 'variable';
+
+
+body{
+    background: var(--color1);
+
+    section{
+        width: 600px;
+        padding: 50px;
+        background: #fff;
+        margin: 100px auto;
+        text-align: center;
+
+        h1{
+            font:bold 50px/1 'arial';
+            color: var(--color1);
+            margin-bottom: 40px;
+        }
+        p{
+            margin-bottom: 30px;
+        }
+        a{
+            display: inline-block;
+            padding: 8px 30px;
+            background: var(--color1);
+            font: bold 16px/1 'arial';
+            color: #fff;
+        }
+    }
+}
+
+//데스크 탑 레이아웃을 모바일 버전으로 반응형 처리 할 때 주의점
+//모바일 디바이스는 폭이 워낙 다양하기에 퍼센트 처리 해야함
+@media screen and (max-width:999px){
+    body{
+        background: var(--color2);
+    
+        section{
+            width:80%;
+    
+            h1{
+                color: var(--color2);
+
+            }
+            a{
+                display: inline-block;
+                background: var(--color2);
+            }
+        }
+    }
+}
+
+@media screen and (max-width:560px){
+    body{
+        background: var(--color3);
+    
+        section{
+            width:80%;
+    
+            h1{
+                color: var(--color3);
+
+            }
+            a{
+                display: inline-block;
+                background: var(--color3);
+            }
+        }
+    }
+}
